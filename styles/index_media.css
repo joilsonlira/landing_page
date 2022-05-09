@@ -1,6 +1,6 @@
 @media screen and (min-width: 720px){
     #main_header{
-            justify-content: space-between;
+        justify-content: space-between;
         }
         #main_header img{
             width: 50%;
@@ -18,6 +18,10 @@
         }
         #main_nav li{
             margin-left: 1rem;
+            }
+            #main_nav li a:hover{
+                color: var(--color-medium-blue);
+                transition-duration: 0.8s;
             }
     #inscription{
         justify-content: end;
@@ -72,6 +76,7 @@
                 padding: 0 6rem 0 6rem;
             }
             #main_header{
+                
                 background-color: var(--color-light);
             }
             #logo img{
@@ -92,7 +97,6 @@
                     }
                     #main_slide_container .efect::hover{
                         background-color: rgba(255, 255, 255, 0.5);
-
                     }
             #call{
                 background-color: var(--color-light);

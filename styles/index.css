@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'gotham';
+    font-family: gotham;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -27,7 +27,7 @@ html, body{
 
 main{
     display: grid;
-    grid-template-rows: auto 80vh 20vh auto auto auto 25vh 30vh;
+    grid-template-rows: auto 80vh 20vh auto auto auto 20vh 30vh;
     grid-template-areas: 
         'header'
         'inscription'
@@ -67,6 +67,9 @@ main{
                 justify-content: center;
                 align-items: center;
                 }
+            #main_nav li a{
+                color: inherit;
+            }
             #main_nav img{
                 width: 10%;
             }
@@ -101,7 +104,7 @@ main{
             }
             .inscription_detail button{
                 margin-top: 2rem;
-                border-radius: 10px;
+                /* border-radius: 10px; */
                 border: var(--color-second) solid 2px;
                 width: 40%;
                 height: 10%;
@@ -116,7 +119,7 @@ main{
         align-items: center;
         padding: 0 1rem 0 1rem;
         text-align: center;
-        font-family: 'gotham-bold';
+        font-family: gotham-bold;
         font-size: 24px;
         line-height: 21px;
         color: var(--color-dark);
@@ -159,7 +162,8 @@ main{
         flex-direction: column;
         height: auto;
         line-height: 32px;
-        color: var(--color-dark);
+        color: var(--color-light-blue);
+        background-color: var(--color-dark);
         }
         .text{
             margin: 0 auto;
@@ -182,7 +186,7 @@ main{
             }
             .event_container p{
                 line-height: 21px;
-                color: var(--color-blue);
+                color: var(--color-light-blue);
                 }
             .event_container h2{
                 margin: 1rem 0 1rem 0;
@@ -192,7 +196,7 @@ main{
                 margin: 0.5rem 0 0.5rem 0;
                 width: 80%;
                 height: 25vh;
-                color: var(--color-second);
+                color: var(--color-light-blue);
                 }
                 .event_header{
                     display: flex;
@@ -201,7 +205,7 @@ main{
                     }
                 .event_content{
                     font-size: 18px;
-                    font-family: 'gotham-light';
+                    font-family: gotham-light;
                     font-weight: 500;
                     height: 100%;
                     }
@@ -210,12 +214,30 @@ main{
                         }
     #secondary_slide_container{
         grid-area: secondary_slide;
-        background-color:var(--color-medium-blue);
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:var(--color-light);
+        }
+        #secondary_slide_container img{
+            width: 20%;
+        }
     #main_footer{
         grid-area: footer;
         background-color: var(--color-dark);
-    }
+        }
+        .social_container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+        }
+        .social_container .social{
+            width: 100px;
+            height: 50px;
+            background-color: #e28431;
+            }
+    
     .mySlides {display:none;}
 
     /*SLIDE EFECTS*/
