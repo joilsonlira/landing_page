@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'gotham', sans-serif;
+    font-family: 'gotham';
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -27,7 +27,7 @@ html, body{
 
 main{
     display: grid;
-    grid-template-rows: 10vh 50vh 10vh 50vh 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 80vh 20vh auto 25vh auto 25vh 30vh;
     grid-template-areas: 
         'header'
         'inscription'
@@ -42,13 +42,13 @@ main{
     #main_header{
         grid-area: header;
         display: flex;
-        justify-content: center;
         align-items: center;
         width: 100%;
+        padding: 0 1rem 0 1rem;
         }
         #logo{
             display: flex;
-            justify-content: center;
+            justify-content: start;
             align-items: center;
             width: 40vw;
             height: 100%;
@@ -57,31 +57,34 @@ main{
                 width: 90%;
                 }
         #main_nav{
-            display: none;
+            display: flex;
+            justify-content: end;
             align-items: center;
             }
             #main_nav ul{
-                display: flex;
+                display: none;
                 justify-content: center;
                 align-items: center;
                 }
+            #main_nav img{
+                width: 10%;
+            }
     #inscription{
         grid-area: inscription;
         display: flex;
-        justify-content: end;
-        background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(45, 195, 202, 0.4)), url(/components/images/biogas.jpg);
+        justify-content: start;
+        background: linear-gradient(rgba(66, 66, 66, 0.4), rgba(15, 72, 75, 0.4)), url(/components/images/biogas.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         }
         .inscription_detail{
             padding: 1rem;
-            border: var(--color-second) solid 2px;
-            width: 70%;
+            width: 100%;
             height: 90%;
             font-size: 1.5rem;
             font-weight: 400;
             text-align: start;
-            background-color: rgba(68, 84, 106, 0.6);
             }
             .inscription_detail h2{
                 text-align: start;
@@ -97,15 +100,26 @@ main{
             }
             .inscription_detail button{
                 margin-top: 2rem;
+                border-radius: 10px;
                 border: var(--color-second) solid 2px;
                 width: 40%;
-                height: 15%;
+                height: 10%;
+                font-size: 22px;
                 color: var(--color-second);
                 background-color: transparent;
             }
     #call{
         grid-area: call;
-        background-color: var(--color-medium-dark);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem 0 1rem;
+        text-align: center;
+        font-family: 'gotham-bold';
+        font-size: 24px;
+        line-height: 21px;
+        color: var(--color-dark);
+        /* background-color: var(--color-light); */
         }
     #information_container{
         grid-area: information;
@@ -113,10 +127,74 @@ main{
         flex-wrap: wrap;
         width: 100%;
         height: auto;
-        background-color: #2dc3ca;
+        text-align: center;
+        font-family: 'gotham-bold';
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--color-second);
         }
         .information{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
-            height: 50%;
+            height: auto;
             }
-    
+            .information li{
+                margin: 0.5rem;
+                }
+    #main_slide_container{
+        background-color:#007078;
+    }
+    #schedule{
+        grid-area: schedule;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        line-height: 32px;
+        color: var(--color-dark);
+        }
+        .event_container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            }
+            .event_container p{
+                line-height: 21px;
+                color: var(--color-blue);
+                }
+            .event_container h2{
+                margin: 1rem 0 1rem 0;
+                }
+            .event_article{
+                border-top: var(--color-light-blue) solid;
+                margin: 0.5rem 0 0.5rem 0;
+                width: 80%;
+                height: 25vh;
+                color: var(--color-second);
+                }
+                .event_header{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    }
+                .event_content{
+                    font-size: 18px;
+                    font-family: 'gotham-light';
+                    font-weight: 500;
+                    height: 100%;
+                    }
+                    .event_content p{
+                        color: var(--color-second);
+                        }
+    #secondary_slide_container{
+        grid-area: secondary_slide;
+        background-color:#007078;
+    }
+    #main_footer{
+        grid-area: footer;
+        background-color: var(--color-dark);
+    }
+

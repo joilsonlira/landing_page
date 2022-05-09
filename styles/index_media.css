@@ -1,0 +1,85 @@
+@media screen and (min-width: 720px){
+    #main_header{
+            justify-content: space-between;
+        }
+        #main_header img{
+            width: 50%;
+        }
+
+    #main_nav{
+        justify-content: end;
+    }
+
+    #main_nav img{
+        display: none;
+    }
+    #main_nav ul{
+        display: flex;
+        }
+        #main_nav li{
+            margin-left: 1rem;
+            }
+    #inscription{
+        justify-content: end;
+        }
+    .information ul{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        font-size: 18px;
+        text-align:center;
+        }
+    #schedule{
+        background-color: var(--color-dark);
+    }
+    .event_container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        .event_article{
+            width: 50%;
+        }
+        .event_container h2,h3{
+            color: var(--color-light);
+            }
+        .event_container p{
+            color: var(--color-blue);
+            }
+            .event_article p{
+                color: var(--color-light);
+            }
+            #secondary_slide_container{
+                background-color: var(--color-light);
+            }
+        }
+@media screen and (min-width: 768px){
+    body{
+        /* background: linear-gradient(rgba(66, 66, 66, 0.4), rgba(15, 72, 75, 0.4)), url(/components/images/biogas.jpg); */
+        background-image: url(/components/images/biogas.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        }
+            #main_header, #inscription, #information_container, #call, #main_slide_container, #schedule, #secondary_slide_container, #main_footer{
+                padding: 0 6rem 0 6rem;
+            }
+            #main_header{
+                background-color: var(--color-light);
+            }
+            #logo img{
+                width: 20%;
+            }
+            #inscription{
+                justify-content: end;
+                }
+            .inscription_detail{
+                width: 60%;
+                }
+            #call{
+                background-color: var(--color-light);
+            }
+            .event_content{
+                padding: 0 0.5rem 0 0.5rem;
+                }
+
+}
