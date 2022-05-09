@@ -95,7 +95,7 @@
                     padding: 0;
                     width: 100%;
                     }
-                    #main_slide_container .efect::hover{
+                    #main_slide_container .efect:hover{
                         background-color: rgba(255, 255, 255, 0.5);
                     }
             #call{

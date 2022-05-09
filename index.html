@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--CSS-->
+    <link rel="stylesheet" href="/styles/slide.css">
     <link rel="stylesheet" href="/styles/fonts.css">
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/index_media.css">
@@ -60,10 +61,15 @@
         </section>
         </section><!--sessão destinada a textos simples-->
         <section id="main_slide_container">
-            <img src="/components/images/ForumABiogasIV_186.jpg" alt="">
-            <img src="/components/images/ForumABiogasIV_48.jpg" alt="">
-            <img src="/components/images/Conteudo-para-o-portal-da-Ecomondo-Brasil20-20FC3B3rum20BiogC3A1s20-20CC3B3pia.jpg" alt="">
-        </section>sessão destinada a slide com controle e (ou) de video
+            <div class="gallery js-flickity"
+            data-flickity-options='{ "wrapAround": true }'>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+</div>
+        </section><!--sessão destinada a slide com controle e (ou) de video-->
         <section id="schedule">
             <section class="text">
                 <p>Seminário Técnico 2022 - tema: <span>Biogás na rota de zero emissão</span></p>
@@ -161,7 +167,7 @@
             </section>
         </section><!--sessão destinada ao cronograma-->
         <section id="secondary_slide_container">
-            <img src="/components/images/logo_abiogas_site 1.svg" alt="">
+            <!-- <img src="/components/images/logo_abiogas_site 1.svg" alt=""> -->
         </section><!--sessão destinada a slide automatico-->
         <footer id="main_footer">
             <ul class="social_container">

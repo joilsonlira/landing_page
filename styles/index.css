@@ -224,17 +224,22 @@ main{
         }
     #main_footer{
         grid-area: footer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: var(--color-dark);
         }
         .social_container{
             display: flex;
             align-items: center;
-            justify-content: center;
-            width: 30%;
+            width: auto;
+            /* background-color: #007078; */
         }
         .social_container .social{
-            width: 100px;
+            width: 50px;
             height: 50px;
+            margin: 0 2px 0 2px;
+            border-radius: 100%;
             background-color: #e28431;
             }
     
