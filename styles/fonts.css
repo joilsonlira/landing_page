@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'gothan';
+    src: url('../components/fonts/gotham.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothan-bold';
+    src: url('../components/fonts/gotham-bold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothan-italic';
+    src: url('../components/fonts/gotham-italic.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothan-light';
+    src: url('../components/fonts/gotham-light.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
