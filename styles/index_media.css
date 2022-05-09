@@ -32,6 +32,13 @@
     #schedule{
         background-color: var(--color-dark);
     }
+    .text{
+        color: var(--color-light);
+        }
+        .text span{
+            font-weight: bolder;
+            color: var(--color-second);
+        }
     .event_container{
         flex-direction: row;
         flex-wrap: wrap;
@@ -52,9 +59,10 @@
                 background-color: var(--color-light);
             }
         }
+
+
 @media screen and (min-width: 768px){
     body{
-        /* background: linear-gradient(rgba(66, 66, 66, 0.4), rgba(15, 72, 75, 0.4)), url(/components/images/biogas.jpg); */
         background-image: url(/components/images/biogas.jpg);
         background-size: cover;
         background-attachment: fixed;
@@ -75,11 +83,21 @@
             .inscription_detail{
                 width: 60%;
                 }
+            #information_container{
+                height: 20vh;
+                }
+                #main_slide_container img{
+                    padding: 0;
+                    width: 100%;
+                    }
+                    #main_slide_container .efect::hover{
+                        background-color: rgba(255, 255, 255, 0.5);
+
+                    }
             #call{
                 background-color: var(--color-light);
             }
             .event_content{
                 padding: 0 0.5rem 0 0.5rem;
                 }
-
 }

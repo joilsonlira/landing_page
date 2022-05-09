@@ -27,7 +27,7 @@ html, body{
 
 main{
     display: grid;
-    grid-template-rows: auto 80vh 20vh auto 25vh auto 25vh 30vh;
+    grid-template-rows: auto 80vh 20vh auto auto auto 25vh 30vh;
     grid-template-areas: 
         'header'
         'inscription'
@@ -37,20 +37,21 @@ main{
         'schedule'
         'secondary_slide'
         'footer'
-    ;
+        ;
     }
     #main_header{
         grid-area: header;
         display: flex;
         align-items: center;
         width: 100%;
+        height: 10vh;
         padding: 0 1rem 0 1rem;
         }
         #logo{
             display: flex;
             justify-content: start;
             align-items: center;
-            width: 40vw;
+            width: 50vw;
             height: 100%;
             }
             #logo img{
@@ -144,8 +145,13 @@ main{
                 margin: 0.5rem;
                 }
     #main_slide_container{
-        background-color:#007078;
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        #main_slide_container img{
+            width: 100%;
+            }
     #schedule{
         grid-area: schedule;
         display: flex;
@@ -155,6 +161,19 @@ main{
         line-height: 32px;
         color: var(--color-dark);
         }
+        .text{
+            margin: 0 auto;
+            text-align: center;
+            width: 60%;
+            }
+            .text p{
+                line-height: 21px;
+                margin: 1rem 0 1rem 0;
+                }
+            .text span{
+                font-weight: bolder;
+                color: var(--color-second);
+            }
         .event_container{
             display: flex;
             flex-direction: column;
@@ -191,10 +210,12 @@ main{
                         }
     #secondary_slide_container{
         grid-area: secondary_slide;
-        background-color:#007078;
+        background-color:var(--color-medium-blue);
     }
     #main_footer{
         grid-area: footer;
         background-color: var(--color-dark);
     }
+    .mySlides {display:none;}
 
+    /*SLIDE EFECTS*/
