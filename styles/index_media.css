@@ -17,6 +17,7 @@
         display: flex;
         }
         #main_nav li{
+            text-align: center;
             margin-left: 1rem;
             }
             #main_nav li a:hover{

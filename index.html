@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--CSS-->
-    <link rel="stylesheet" href="/styles/slide.css">
     <link rel="stylesheet" href="/styles/fonts.css">
+    <link rel="stylesheet" href="/styles/slide.css">
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/index_media.css">
 
@@ -27,48 +27,50 @@
             <nav id="main_nav">
                 <img src="/components/images/cardapio.png" alt="">
                 <ul>
-                    <li><a href="">link_1</a></li>
-                    <li><a href="">link_2</a></li>
-                    <li><a href="">link_3</a></li>
-                    <li><a href="">link_4</a></li>
-                    <li><a href="">link_5</a></li>
+                    <li><a href="">Inscreva-se</a></li>
+                    <li><a href="">Quem somos</a></li>
+                    <li><a href="">Programação</a></li>
+                    <li><a href="">Patrocinadores</a></li>
+                    <li><a href="">Fale conosco</a></li>
                 </ul>
             </nav>
         </header>
         <section id="inscription">
             <article class="inscription_detail">
-                <h2>ipsum at risus</h2>
-                <p>Duis ultricies at nibh nec efficitur. Praesent quis ipsum 
-                    at risus rutrum laoreet. Etiam dapibus nisl mattis ornare sodales.</p>
+                <h2>Sobre o evento</h2>
+                <p>Com o intuito de disseminar conhecimento, promover debates e gerar oportunidades de negócios, a ABiogás organiza eventos anuais que contam com a participação de especialistas para discutir temas de relevância para o setor.</p>
                 <button>Inscrever-se</button>
             </article>
         </section><!--sessão destinada a descrição do evento com um botão de inscrição-->
         <sectiom id="call">
-            <p>Nullam vel vestibulum nibh. Nam a massa facilisis odio consequat</p>
-        </sectiom><!--sessão para chamada de ação e acontecimentos-->
+            <h2>Quem somos</h2>
+            <div class="rotativo">
+                <p><span>A Associação Brasileira do Biogás</span>(<span>ABiogás</span>), que congrega<span> mais de 110 empresas integrantes da cadeia de valor do biogás</span> e biometano, tem como principal objetivo trabalhar em prol da inserção, consolidação e sustentabilidade deste energético estratégico na matriz brasileira de energia por meio do trabalho junto às instituições que fazem a política, regulação e o desenvolvimento de mercado do setor.</p>
+
+                <p><span>A ABiogás</span> conta com empresas associadas que representam todos os setores da cadeia de produção, aproveitamento e beneficiamento do segmento de biogás. Com responsabilidade na atuação junto aos órgãos competentes e o compromisso com a divulgação de informações relevantes, a ABiogás, <span>seus associados e parceiros visam sempre alcançar os melhores e mais transformadores resultados para a sociedade brasileira</span>.</p>
+
+            </sectiom><!--sessão para chamada de ação e acontecimentos-->
+            </div>
         <section id="information_container">
             <article class="information">
-                <ul>
-                    <li>Abertura</li>
-                    <li>Credenciamento</li>
+                <!-- <ul>
                     <li>Painel tecnico</li>
                     <li>Espaço patrocinadores</li>
                     <li>Paine sustentabilidade</li>
                     <li>Painel bioás</li>
                     <li>Coffee break</li>
-                </ul>
+                </ul> -->
             </article>
         </section>
         </section><!--sessão destinada a textos simples-->
         <section id="main_slide_container">
-            <!-- <div class="gallery js-flickity"
-            data-flickity-options='{ "wrapAround": true }'>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            </div> -->
+            <div class="gallery" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell hidem_cell"></div>
+                <div class="gallery-cell hidem_cell"></div>
+                <div class="gallery-cell hidem_cell"></div>
+                <div class="gallery-cell hidem_cell"></div>
+                <div class="gallery-cell"></div>
+            </div>
         </section><!--sessão destinada a slide com controle e (ou) de video-->
         <section id="schedule">
             <section class="text">
@@ -167,15 +169,52 @@
             </section>
         </section><!--sessão destinada ao cronograma-->
         <section id="secondary_slide_container">
-            <!-- <img src="/components/images/logo_abiogas_site 1.svg" alt=""> -->
+            <section class="patrocinadores">
+                <section class="vantagens">
+                    <h2>porque ser um patrocinador</h2>
+                    <p>Duis ultricies at nibh nec efficitur. Praesent quis ipsum 
+                        at risus rutrum laoreet. Etiam dapibus nisl mattis ornare sodales.</p>
+                </section>
+                <section class="descrição">
+
+                </section>
+                    <button>Patrocinar</button>
+            </section>
         </section><!--sessão destinada a slide automatico-->
+        <form action="">
+            <h2>Fale conosco</h2>
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Nome">
+            <textarea name="" id="mensagem" cols="30" rows="10"></textarea>
+            <input type="button" value="Enviar">
+        </form>
         <footer id="main_footer">
             <ul class="social_container">
-                <li class="social"></li>
-                <li class="social"></li>
-                <li class="social"></li>
+                <li class="social"><a href="#"><img src="/components/images/Instagram - Negative.svg" alt=""></a></li>
+                <li class="social"><a href="#"><img src="/components/images/Facebook - Negative.svg" alt=""></a></li>
+                <li class="social"><a href="#"><img src="/components/images/LinkedIn - Negative.svg" alt=""></a></li>
             </ul>
         </footer>
     </main>
+
+
+<!--SCRIPTS-->
+<script>
+    var slideIndex = 0;
+    carousel();
+    
+    function carousel() {
+      let i;
+      let x = document.getElementsByClassName("frame");
+      let (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1} 
+      x[slideIndex-1].style.display = "block"; 
+      setTimeout(carousel, 2000); 
+    }
+    </script>
+
 </body>
 </html>

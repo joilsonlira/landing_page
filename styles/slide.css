@@ -6,9 +6,15 @@
   /* body { font-family: sans-serif; } */
   
   .gallery {
-    background: #EEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    width: 100%;
   }
-  
+  .hidem_cell{
+    display: none;
+  }
   .gallery-cell {
     width: 66%;
     height: 200px;
