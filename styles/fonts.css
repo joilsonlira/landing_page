@@ -1,24 +1,30 @@
 @font-face {
     font-family: 'gothan';
-    src: url('/components/fonts/GothamBook.ttf') format('truetype');
+    src: url('/components/fonts/gotham.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'gothan-bold';
-    src: url('/components/fonts/gotham-bold.otf') format('otf');
+    src: url('/components/fonts/gotham-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'gothan-italic';
-    src: url('/components/fonts/gotham-italic.otf') format('otf');
+    src: url('/components/fonts/gotham-italic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'gothan-light';
-    src: url('/components/fonts/gotham-light.ttf') format('ttf');
+    src: url('/components/fonts/gotham-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothan-book';
+    src: url('/components/fonts/GothamBook.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
