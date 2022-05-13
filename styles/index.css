@@ -342,7 +342,7 @@ main{
             .event_article{
                 border-top: var(--color-light-blue) solid;
                 margin: 0.5rem 0 0.5rem 0;
-                width: 60%;
+                width: 100%;
                 height: 25vh;
                 color: var(--color-light-blue);
                 }

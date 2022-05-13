@@ -23,7 +23,6 @@ btn_contato.onclick = function() {
 span.onclick = function() {
     modal.style.display = "none";
 }
-
 span_contato.onclick = function() {
     modal_contato.style.display = "none";
 }
@@ -33,6 +32,8 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+window.onclick = function(event) {
     if (event.target == modal_contato){
         modal_contato.style.display = "none";
     }
