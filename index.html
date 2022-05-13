@@ -207,13 +207,51 @@
             </section>
         </section><!--sessão destinada ao cronograma-->
         <section id="secondary_slide_container">
-            <section class="patrocinadores hide">
+            <section class="patrocinadores">
                 <header class="edicoes_title">
                     <div class="icon">
                         <img src="/components/images/icon_header.png" alt="">
                     </div> 
                     <h2>PATROCINADORES</h2>
                 </header>
+                <div class="patrocinadores_container">
+                    <div class="patrocinador_content">
+                        <h2>Porque patrocinar</h2>
+                        <p>
+                            Contato direto com empresas e empresarios com grande poder de decição
+                        </p>
+                        <p>     
+                            Possibilidade de visibilidade para sua empresa, mediante apresentação/palestra durante a
+                            programação do evento.(dependo da cota)
+                        </p>
+                        <p>
+                            entrega de folders e materiais promocionais para os participantes.
+                        </p>
+                        <p>
+                            Stand para networking
+                        </p>
+                        <p>
+                            Area do patrocinador no site do evento (link direcionando para o seu site, ou fale conosco).
+                            Mailing dos participantes do evento (seguimos as normas da LGPD)
+                        </p>
+                    </div>
+                    <button id="myBtn">Patrocinar</button>
+                </div>
+
+
+                <!--Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <form class="modal_form">
+                            <h2>Quero ser um patrocinador</h2>
+                            <input type="text" placeholder="Nome">
+                            <input type="text" placeholder="Empresa">
+                            <input type="text" placeholder="E-mail">
+                            <input class="close" type="button" value="Patrocinar">
+                        </form>
+                    </div>
+                </div>
             </section>
         </section><!--sessão destinada a slide automatico-->
         <footer id="main_footer">
@@ -229,3 +267,5 @@
             </ul>
         </footer>
     </main>
+    <script src="/scripts/js/index.js"></script>
+</body>
