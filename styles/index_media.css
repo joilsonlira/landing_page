@@ -97,7 +97,7 @@
                     width: 100%;
                     }
                     #main_slide_container .efect:hover{
-                        background-color: rgba(255, 255, 255, 0.5);
+                        background-color: rgba(63, 63, 63, 0.7);
                     }
             #call{
                 background-color: var(--color-light);
