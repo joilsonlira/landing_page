@@ -110,7 +110,7 @@ main{
         }
         .inscription_detail{
             padding: 1rem;
-            width: 60%;
+            width: 50%;
             height: 90%;
             font-size: 1.5rem;
             font-weight: 400;
@@ -329,6 +329,7 @@ main{
             align-items: center;
             padding: 1rem;
             width: 100%;
+            height: auto;
             margin: 0 auto;
             }
             .event_container p{
@@ -341,7 +342,7 @@ main{
             .event_article{
                 border-top: var(--color-light-blue) solid;
                 margin: 0.5rem 0 0.5rem 0;
-                width: 50%;
+                width: 60%;
                 height: 25vh;
                 color: var(--color-light-blue);
                 }
@@ -381,7 +382,7 @@ main{
             display: flex;
             flex-direction: column;
             height: 100%;
-            width: 90%;
+            width: 80%;
             margin: 0 auto;
                 }
                 .patrocinador_content{
@@ -415,9 +416,7 @@ main{
         padding: 1rem;
         align-items: center;
         justify-content: space-between;
-        /* background-color: var(--color-dark); */
         }
-
         .social_container{
             display: flex;
             justify-content: center;
