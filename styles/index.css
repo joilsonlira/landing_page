@@ -448,9 +448,6 @@ main{
                     .social img{
                         width: 55%;
                     }
-        #myBtn_contato{
-
-        }
 
 /*btnMotal*/
 
@@ -492,7 +489,7 @@ main{
     width: 15vw;
     height: 5vh;
 }
-.modal_form input[type="button"], #myBtn{
+.modal_form input[type="button"], #myBtn, #btn_contato{
         cursor: pointer;
         margin-top: 0.5rem;
         border-radius: 50px;
@@ -503,6 +500,9 @@ main{
         font-size: 20px;
         color: var(--color-light);
         background-color: var(--color-second);
+    }
+    #btn_contato{
+        width: 10%;
     }
 .txt_area{
     width: 15vw;

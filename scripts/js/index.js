@@ -4,7 +4,7 @@ var modal_contato = document.getElementById("myModal_contato");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-var btn_contato = document.getElementById("myBtn_contato");
+var btn_contato = document.getElementById("btn_contato");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -32,12 +32,8 @@ span_contato.onclick = function() {
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-    } else if (event.target == modal_contato){
+    }
+    if (event.target == modal_contato){
         modal_contato.style.display = "none";
     }
 }
-// window.onclick = function(event) {
-//     if (event.target == modal_contato) {
-//         modal_contato.style.display = "none";
-//     }
-// }
