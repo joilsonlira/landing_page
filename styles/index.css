@@ -474,7 +474,7 @@ main{
     height: auto; /* Could be more or less, depending on screen size */
 }
 
-.modal_form{
+.modal_form, .modal_form_contato{
     display: flex;
     justify-content: center;
     align-items: center;
