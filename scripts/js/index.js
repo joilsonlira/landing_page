@@ -8,14 +8,13 @@ var btn_contato = document.getElementById("myBtn_contato");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+var span_contato = document.getElementsByClassName("close_contato")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
-    modal_contato.style.display = "block";
 }
 btn_contato.onclick = function() {
-    modal.style.display = "block";
     modal_contato.style.display = "block";
 }
 
@@ -23,6 +22,9 @@ btn_contato.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
+}
+
+span_contato.onclick = function() {
     modal_contato.style.display = "none";
 }
 
@@ -30,8 +32,12 @@ span.onclick = function() {
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-    }
-    if (event.target == modal_contato) {
+    } else if (event.target == modal_contato){
         modal_contato.style.display = "none";
     }
 }
+// window.onclick = function(event) {
+//     if (event.target == modal_contato) {
+//         modal_contato.style.display = "none";
+//     }
+// }
