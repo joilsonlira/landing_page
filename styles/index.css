@@ -148,6 +148,7 @@ main{
                 height: 10%;
                 cursor: pointer;
                 font-size: 22px;
+                font-weight: bolder;
                 color: var(--color-light);
                 background-color: var(--color-second);
             }
@@ -271,6 +272,14 @@ main{
         color: var(--color-dark);
         background-color: var(--color-light);
         }
+        .palestrante{
+            width: 10vw;
+            }
+            .palestrante .palestrante_foto{
+                width: 100%;
+                border-radius: 100px;
+                background-color:var(--color-second);
+                }
         .painel{
             font-family: gothan-bold;
             font-weight: bold;
@@ -351,19 +360,27 @@ main{
             margin: 0 auto;
             /* background-color: var(--color-medium-blue); */
                 }
-                .patrocinadores_content{
+                .patrocinador_content{
                     width: 70%;
-                    height: 100%;
+                    margin: 0 auto;
+                    height: auto;
                     }
-                    .patrocinadores_content p{
-                        font-size: 400;
-                        font-weight: lighter;
-                        margin: 0.5rem 0 0.5rem 0;
-                        background-color: var(--color-dark);
-                        background-color: #0099a8;
+                    .patrocinador_content h2{
+                        color: var(--color-dark);
+                    }
+                    .patrocinador_content ul{
+                        margin-bottom: 2rem;
+                    }
+                    .patrocinador_content ul li{
+                        list-style: disc;
+                        margin: 0.5rem 0 0.5rem;
+                        color: var(--color-dark);
+                        font-weight:lighter;
                         }
-
-
+                    .patrocinador_content ul span{
+                        color: var(--color-dark);
+                        font-family: gothan-bold;
+                    }
     #main_footer{
         grid-area: footer;
         display: flex;
@@ -449,7 +466,7 @@ main{
         margin-top: 0.5rem;
         border-radius: 50px;
         border-style: none;
-        width: 15vw;
+        width: 40%;
         height: 5vh;
         font-family: gothan-bold;
         font-size: 20px;
