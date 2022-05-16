@@ -119,6 +119,9 @@
         flex-direction: column;
         width: 100%;
     }
+    .contato{
+        width: 100%;
+    }
     #btn_contato{
         width: 100%;
         margin: 1rem 0;
