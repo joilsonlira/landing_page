@@ -186,6 +186,9 @@ main{
         align-items: center;
         margin-bottom: 2rem;
         }
+        .mobile{
+            display: none;
+        }
         .call_frame{
             position: relative;
             display: flex;
@@ -622,8 +625,10 @@ main{
     width: 30vw;
     height: auto; /* Could be more or less, depending on screen size */
 }
+.modal_form_contato{
 
-.modal_form, .modal_form_contato{
+}
+.modal_form{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -647,13 +652,48 @@ main{
         margin-top: 0.5rem;
         border-radius: 50px;
         border-style: none;
-        width: 40%;
+        width: 45%;
         height: 5vh;
         font-family: gothan-bold;
         font-size: 0.9rem;
         color: var(--color-light);
         background-color: var(--color-second);
     }
+    .contato_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        padding: 1rem;
+        background-color: #0099a8;
+        }
+        .contato_content{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            }
+            .campo_container{
+                display: flex;
+                align-items: center;
+                }
+                .campo_container textarea{
+                    width: 60%;
+                    height: 20vh;
+                }
+                .txt_container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    width: 70%;
+                    }
+                    .txt_container input{
+                        width: 90%;
+                        height: 7vh;
+                        margin: 0.5rem 1rem;
+                    }
+
     #btn_contato{
         width: 20vw;
     }

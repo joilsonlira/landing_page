@@ -49,8 +49,15 @@
         width: 100%;
         height: 8vh;
     }
-
-    #call, .call_frame, .slider, .manual-navigation, .navigation-auto{
+    .mobile {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        line-height: 24px;
+        width: 100%;
+        height: auto;
+    }
+    .call_frame, .slider, .manual-navigation, .navigation-auto{
         width: 100%;
         display: none;
     }

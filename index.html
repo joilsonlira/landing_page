@@ -45,8 +45,8 @@
             <article class="inscription_detail"><!--sessão destinada a descrição do evento com um botão de inscrição-->
                 <h2>Seminário técnico da <span>ABiogás <br> 2022 </span></h2>
                 <h3><span class="tema">Tema:</span> BIOGÁS NA ROTA DE ZERO EMISSÕES</h3>
-                <p>A <span>ABiogás</span> organiza, anualmente, eventos focados no desenvolvimento do mercado de biogás. Com o objetivo de abordar as principais demandas do setor, cada evento aborda um assunto específico atual e reúne os principais especialistas do setor no Brasil e no exterior para uma troca de conhecimento e oportunidades de negócios.</p>
-                <button>Inscrever-se</button>
+                <p>A <span>ABiogás</span> organiza, anualmente, eventos focados no desenvolvimento do mercado de biogás. Com o objetivo de abordar as principais demandas do setor. ada evento aborda um assunto específico atual e reúne os principais especialistas do setor no Brasil e no exterior para uma troca de conhecimento e oportunidades de negócios.</p>
+                <button>Inscreva-se</button>
             </article>
         </section>
 
@@ -57,6 +57,9 @@
                 </div> 
                 <h2>SOBRE A ABIOGÁS</h2>
             </header><!--FIM HEADER-->
+            <div class="mobile">
+                <p><span>A Associação Brasileira do Biogás</span> (<span>ABiogás</span>), que reúne <span>mais de 110 associados integrados a cadeia de valor do biogás</span> e biometano, tem como principal objetivo trabalhar em prol da inserção e consolidação desse biocombustível na matriz energética brasileira por meio do trabalho junto às instituições que fazem a política, regulação e o desenvolvimento de mercado do setor.</p>
+            </div>
             <div class="slider">
                 <div class="slides">
                     <!--inicio radio buttons-->
@@ -66,7 +69,7 @@
 
                     <!--inicio dos conteudo dos slides-->
                     <div class="call_frame first">
-                        <p><span>A Associação Brasileira do Biogás</span>(<span>ABiogás</span>), que congrega<span> mais de 110 empresas integrantes da cadeia de valor do biogás</span> e biometano, tem como principal objetivo trabalhar em prol da inserção, consolidação e sustentabilidade deste energético estratégico na matriz brasileira de energia por meio do trabalho junto às instituições que fazem a política, regulação e o desenvolvimento de mercado do setor.</p>
+                        <p><span>A Associação Brasileira do Biogás</span> (<span>ABiogás</span>), que reúne <span>mais de 110 associados integrados a cadeia de valor do biogás</span> e biometano, tem como principal objetivo trabalhar em prol da inserção e consolidação desse biocombustível na matriz energética brasileira por meio do trabalho junto às instituições que fazem a política, regulação e o desenvolvimento de mercado do setor.</p>
                     </div>
                     <div class="call_frame">
                         <p><span>A ABiogás</span> conta com empresas associadas que representam todos os setores da cadeia de produção, aproveitamento e beneficiamento do segmento de biogás. Com responsabilidade na atuação junto aos órgãos competentes e o compromisso com a divulgação de informações relevantes, a ABiogás, <span>seus associados e parceiros visam sempre alcançar os melhores e mais transformadores resultados para a sociedade brasileira</span>.</p>
@@ -325,14 +328,7 @@
                     </div>
                     <div id="modal_contato" class="modal">
                         <!-- Modal content -->
-                        <div class="modal-content">
-                            <form class="modal_form">
-                                <input type="text" placeholder="Nome">
-                                <input type="text" placeholder="E-mail">
-                                <textarea name="" class="txt_area" cols="30" rows="10"></textarea>
-                                <input type="button" value="Enviar" onclick="close_modal('modal_contato')">
-                            </form>
-                        </div>
+                        
                 </div>
             </section>
         </section><!--sessão destinada a slide automatico-->
@@ -343,8 +339,20 @@
                     <a href="https://abiogas.org.br/" target="_blank"><img src="/components/images/logo_abiogas_site.png" alt=""></a>
                 </div>
             </section>
-            <div class="contato">
-                <button id="btn_contato" onclick="open_modal('modal_contato')">Fale conosco</button>
+            <div class="contato_container">
+                <div class="contato_content">
+                    <form class="form_contato">
+                        <div class="campo_container">
+                            <div class="txt_container">
+                                <input type="text" placeholder="Nome">
+                                <input type="text" placeholder="E-mail">
+                            </div>
+                            <textarea name="" class="txt_area" cols="30" rows="10"></textarea>
+                        </div>
+                    </form>
+                    <input type="button" value="Enviar">
+                </div>
+                <!-- <button id="btn_contato" onclick="open_modal('modal_contato')">Fale conosco</button> -->
             </div>
             <ul class="social_container">
                 <li class="social"><a href="https://www.instagram.com/abiogas/" target="_blank"><img src="/components/images/Instagram - Negative.svg" alt=""></a></li>
