@@ -40,3 +40,7 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     nav_menu.classList.toggle("active");
 })
+document.querySelectorAll(".nav_link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    nav_menu.classList.remove("active");
+}))

@@ -40,7 +40,7 @@ html, body{
 
 main{
     display: grid;
-    grid-template-rows: 8vh auto;
+    grid-template-rows: 10vh auto ;
     grid-template-areas: 
         'header'
         'inscription'
@@ -76,10 +76,11 @@ main{
             }
             #main_nav .nav_menu{
                 display: flex;
+                align-items: center;
                 justify-content: space-between;
-                align-items: center;
+                z-index: 1;
                 gap: 60px;
-                align-items: center;
+                background-color: var(--color-light);
                 }
                 .nav_menu .nav_item{
                     display: flex;
@@ -90,6 +91,7 @@ main{
                     .nav_menu .nav_item a{
                         cursor: pointer;
                         color: inherit;
+                        transition: 1s;
                         }
                         .nav_item .nav_link{
                             -webkit-transition: 0.7s ease;
@@ -168,7 +170,7 @@ main{
                 padding: 0.5rem;
                 border-radius: 50px;
                 border-style: none;
-                max-width: 20vw;
+                width: 15vw;
                 cursor: pointer;
                 font-size: .9rem;
                 font-weight: bolder;
@@ -301,7 +303,6 @@ main{
                     justify-content: center;
                     width: 100%;
                     margin-bottom: 2rem;
-                    background-color: #007078;
                     }
                     .edicoes_title{
                         display: flex;
@@ -310,10 +311,9 @@ main{
                         align-items: center;
                         width: 100%;
                         height: 10vh;
-                        }
-                        .edicoes_title{
-                            font-size: 24px;
-                            font-weight: bold;
+                        font-size: 24px;
+                        font-weight: bold;
+                        text-align: center;
                         }
                         .edicoes_title .icon{
                             display: flex;
@@ -371,10 +371,14 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 70%;
+            width: 50%;
             margin-top: 2rem;
             cursor: pointer;
             }
+            .videos video[poster]{
+                width: 100%;
+            }
+
     #schedule{
         grid-area: schedule;
         display: flex;
@@ -394,9 +398,8 @@ main{
             margin-top: 2rem;
             }
             .nome{
-                text-align: center;
                 font-family: gothan-bold;
-                font-size: 2rem;
+                font-size: 1rem;
                 color: var(--color-second);
             }
             .palestrante_foto{
@@ -415,10 +418,10 @@ main{
                     flex-direction: column;
                     padding-left: 1rem;
                     }
-                    .palestrante_info p{
-                        text-align: center;
+                    .palestrante_info .palestrante_description{
                         font-weight: lighter;
-                        padding-top: 1rem;
+                        font-size: 0.9rem;
+
                     }
         .painel p{
             font-family: gothan-bold;
@@ -607,6 +610,7 @@ main{
     border-radius: 10px;
     flex-direction: column;
     width: 100%;
+    text-align: center;
     background-color: var(--color-medium-blue);
 }
 .modal_form input[type="text"]{

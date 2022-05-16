@@ -1,6 +1,5 @@
 @media screen and (max-width:768px){
 
-
     .hamburger{
         display: block;
     }
@@ -14,7 +13,10 @@
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-
+    #logo{
+        justify-content: center;
+        margin: 0 auto;
+    }
     .nav_menu{
         position: fixed;
         flex-direction: column;
@@ -34,28 +36,90 @@
     .nav_menu.active{
         left: 0;
     }
+    .nav_item .nav_link:hover{
+        border-radius: 0;
+        width: 100%;
+        width: 100%;
+    }
 
     .inscription_detail{
         width: 100%;
     }
-    .call_frame, .slider, .manual-navigation, .navigation-auto{
+    .inscription_detail button{
         width: 100%;
     }
-    /* .slides{
-        background-color: aquamarine;
-        width: 800px;
-    } */
 
-    /* #main_header, 
-    #inscription, 
-    #call, 
-    #information_container, 
-    #main_slide_container, 
-    #schedule, 
-    #secondary_slide_container,
-    #main_footer{
-        margin: 0;
-        padding: 0;
+    #call, .call_frame, .slider, .manual-navigation, .navigation-auto{
         width: 100%;
-    } */
+        display: none;
+    }
+    .videos{
+        width: 100%;
+    }
+    .edicoes_title{
+        flex-direction: column;
+        font-size: .9rem;
+    }
+    .icon, .icon img{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    #schedule{
+        width: 100%;
+    }
+    .text{
+        width: 90%;
+    }
+    .event_container{
+        width: 100%;
+    }
+    .event_article{
+        width: 100%;
+    }
+
+    .patrocinadores_container{
+        width: 100%;
+    }
+    .patrocinador_content{
+        width: 90%;
+    }
+    .patrocinador_content ul li{
+        list-style: none;
+    }
+    .palestrante_foto{
+        width: 20vw;
+    }
+    .palestrante_info p{
+        padding: 0;
+    }
+
+
+    .modal-content{
+        width: 90vw;
+    }
+    .btn_endereco{
+        width: 100%;
+    }
+    .modal_form input[type="text"]{
+        width: 100%;
+    }
+    .modal_form input[type="button"]{
+        width: 100%;
+    }
+    .txt_area{
+        width: 100%;
+    }
+
+    #myBtn{
+        width: 100%;
+    }
+    #main_footer{
+        flex-direction: column;
+        width: 100%;
+    }
+    #btn_contato{
+        width: 100%;
+        margin: 1rem 0;
+    }
 }
