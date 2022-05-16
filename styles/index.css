@@ -171,6 +171,7 @@ main{
                 border-radius: 50px;
                 border-style: none;
                 width: 15vw;
+                height: 5vh;
                 cursor: pointer;
                 font-size: .9rem;
                 font-weight: bolder;
@@ -542,9 +543,10 @@ main{
     #main_footer{
         grid-area: footer;
         display: flex;
-        padding: 1rem;
         align-items: center;
         justify-content: space-between;
+        padding: 1rem;
+        height: 20vh;
         }
         .social_container{
             display: flex;

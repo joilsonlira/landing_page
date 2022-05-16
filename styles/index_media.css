@@ -47,6 +47,7 @@
     }
     .inscription_detail button{
         width: 100%;
+        height: 8vh;
     }
 
     #call, .call_frame, .slider, .manual-navigation, .navigation-auto{
