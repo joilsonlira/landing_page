@@ -10,7 +10,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="/styles/fonts.css">
     <link rel="stylesheet" href="/styles/index.css">
-    <!-- <link rel="stylesheet" href="/styles/index_media.css"> -->
+    <link rel="stylesheet" href="/styles/index_media.css">
 
     <script src="/scripts/js/index.js"></script>
 
@@ -26,13 +26,18 @@
                 <img src="/components/images/logo_seminario_abiogas_2022.png" alt="logo do seminario ABiogas 2022">
             </section>
             <nav id="main_nav"><!-- container para o Menu principal de navegação-->
-                <ul><!--Menu principal-->
-                    <li><a href="#inscription">Inscreva-se</a></li>
-                    <li><a href="">Quem somos</a></li>
-                    <li><a href="">Programação</a></li>
-                    <li><a href="">Patrocinadores</a></li>
-                    <li><a href="">Fale conosco</a></li>
+                <ul class="nav_menu"><!--Menu principal-->
+                    <li class="nav_item"><a href="#inscription" class="nav_link">Inscreva-se</a></li>
+                    <li class="nav_item"><a href="" class="nav_link">Quem somos</a></li>
+                    <li class="nav_item"><a href="" class="nav_link">Programação</a></li>
+                    <li class="nav_item"><a href="" class="nav_link">Patrocinadores</a></li>
+                    <li class="nav_item"><a href="" class="nav_link">Fale conosco</a></li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
         </header>
         <section id="inscription">
@@ -176,7 +181,10 @@
                             <div class="palestrante_foto">
                                 <img src="/components/images/empresario.jpg" alt="">
                             </div>
-                            <h4 class="nome">Lorem ipsum dolor</h4>
+                            <div class="palestrante_info">
+                                <h4 class="nome">Lorem ipsum dolor</h4>
+                                <p>consectetur adipiscing elit</p>
+                            </div>
                         </div>
                     </main>
                 </article>
@@ -206,7 +214,11 @@
                             <div class="palestrante_foto">
                                 <img src="/components/images/empresario.jpg" alt="">
                             </div>
-                            <h4 class="nome">Lorem ipsum dolor</h4>
+                            <div class="palestrante_info">
+                                <h4 class="nome">Lorem ipsum dolor</h4>
+                                <p>consectetur adipiscing elit</p>
+                            </div>
+                        </div>
                     </main>
                 </article>
                 <article class="event_article">
@@ -235,7 +247,11 @@
                             <div class="palestrante_foto">
                                 <img src="/components/images/empresario.jpg" alt="">
                             </div>
-                            <h4 class="nome">Lorem ipsum dolor</h4>
+                            <div class="palestrante_info">
+                                <h4 class="nome">Lorem ipsum dolor</h4>
+                                <p>consectetur adipiscing elit</p>
+                            </div>
+                        </div>
                     </main>
                 </article>
                 <article class="event_article">

@@ -17,6 +17,9 @@ span{
     font-weight: bolder;
     color: var(--color-second);
 }
+a{
+    color: inherit;
+}
 /*PROJECT COLORS*/
 :root{
     --color-second: #e28431;
@@ -37,7 +40,7 @@ html, body{
 
 main{
     display: grid;
-    grid-template-rows: 15vh auto auto auto auto auto auto 20vh;
+    grid-template-rows: 8vh auto;
     grid-template-areas: 
         'header'
         'inscription'
@@ -49,55 +52,77 @@ main{
         'footer'
         ;
     }
+    
     #main_header{
         grid-area: header;
         display: flex;
         align-items: center;
-        width: 100%;
+        justify-content:space-between;
         padding: 0 1rem 0 1rem;
         }
         #logo{
             display: flex;
             justify-content: start;
             align-items: center;
-            width: 50vw;
-            height: auto;
+            height: 100%;
             }
             #logo img{
-                width: 30%;
-                }
+                height: 100%;
+            }
         #main_nav{
             display: flex;
             justify-content: end;
             align-items: center;
-            width: 100%;
             }
-            #main_nav ul{
+            #main_nav .nav_menu{
                 display: flex;
                 justify-content: space-between;
-                gap: 50px;
+                align-items: center;
+                gap: 60px;
                 align-items: center;
                 }
-                #main_nav li{
+                .nav_menu .nav_item{
                     display: flex;
                     justify-content: space-between;
                     text-align: left;
                     color: var(--color-second);
-                }
-            #main_nav li a{
+                    }
+                    .nav_menu .nav_item a{
+                        cursor: pointer;
+                        color: inherit;
+                        }
+                        .nav_item .nav_link{
+                            -webkit-transition: 0.7s ease;
+                            -moz-transition: 0.7s ease;
+                            transition: 0.7s ease;
+                            }
+                            .nav_item .nav_link:hover{
+                                border-radius: 50px;
+                                padding: 0.5rem;
+                                -webkit-transition: 0.4s ease;
+                                -moz-transition: 0.4s ease;
+                                transition: 0.4s ease;
+                                font-weight: bold;
+                                color: var(--color-light);
+                                background-color: var(--color-second);
+                            }
+            .hamburger{
+                display: none;
                 cursor: pointer;
-                color: inherit;
                 }
-                #main_nav li a:hover{
-                    border-radius: 50px;
-                    padding: 0.5rem;
-                    transition: 0.4s ease-in;
-                    color: var(--color-light);
+                .hamburger .bar{
+                    display: block;
+                    width: 25px;
+                    height: 3px;
+                    margin: 5px auto;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
                     background-color: var(--color-second);
                 }
-            #main_nav img{
-                width: 10%;
-            }
+
+
+
     #inscription{
         grid-area: inscription;
         display: flex;
@@ -124,7 +149,6 @@ main{
             }
             .inscription_detail p{
                 color: var(--color-dark);
-                /* font-family: gotham-light; */
                 font-size: 18px;
                 line-height: 24px;
                 margin-bottom: 55px;
@@ -144,10 +168,9 @@ main{
                 padding: 0.5rem;
                 border-radius: 50px;
                 border-style: none;
-                width: 15vw;
-                height: 10%;
+                max-width: 20vw;
                 cursor: pointer;
-                font-size: 22px;
+                font-size: .9rem;
                 font-weight: bolder;
                 color: var(--color-light);
                 background-color: var(--color-second);
@@ -183,7 +206,6 @@ main{
             width: 800px;
             height: 300px;
             overflow: hidden;
-            /* background-color: #abf0f5; */
         }
         .slides{
             width: 400%;
@@ -275,9 +297,11 @@ main{
                 }
                 .edicoes_anteriores{
                     display: flex;
+                    flex-wrap: wrap;
                     justify-content: center;
                     width: 100%;
                     margin-bottom: 2rem;
+                    background-color: #007078;
                     }
                     .edicoes_title{
                         display: flex;
@@ -307,10 +331,10 @@ main{
                     .frame_edicoes{
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
                         align-items: center;
                         padding: 1rem;
-                        width: 20%;
+                        margin: 1rem;
+                        width: 300px;
                     }
                     .edicoes_anteriores header{
                         width: 30%;
@@ -323,7 +347,7 @@ main{
                         margin-top: 20px;
                     }
                     .edicoes_anteriores header h2{
-                        font-size: 24px;
+                        font-size: 1rem;
                         font-weight: bold;
                         color: var(--color-light);
                     }
@@ -361,36 +385,41 @@ main{
         background-color: var(--color-light);
         }
         .palestrante{
-            position: absolute;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: start;
             align-items: center;
-            width: 10%;
-            height: 20vh;
+            width: 100%;
+            height: auto;
             margin-top: 2rem;
             }
             .nome{
                 text-align: center;
                 font-family: gothan-bold;
-                font-size: medium;
-                margin: 0px;
-                padding: 0px;
+                font-size: 2rem;
                 color: var(--color-second);
             }
             .palestrante_foto{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 70%;
-                height: 70%;
+                width: 15%;
+                /* height: 200px; */
                 clip-path: circle(40%);
-                background-color: #007078;
-                /* overflow: hidden; */
-            }
-            .palestrante_foto img{
-                width: 85%;
                 }
+                .palestrante_foto img{
+                    width: 100%;
+                }
+                .palestrante_info{
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 1rem;
+                    }
+                    .palestrante_info p{
+                        text-align: center;
+                        font-weight: lighter;
+                        padding-top: 1rem;
+                    }
         .painel p{
             font-family: gothan-bold;
             font-size: 24px;
@@ -431,8 +460,11 @@ main{
                 margin: 1rem 0 1rem 0;
                 }
             .event_article{
+                display: flex;
+                flex-direction: column;
                 border-top: var(--color-light-blue) solid;
                 margin: 0.5rem 0 0.5rem 0;
+                padding: 1rem 0;
                 width: 60%;
                 height: auto;
                 color: var(--color-light-blue);
@@ -446,6 +478,9 @@ main{
                         color: var(--color-second);
                     }
                 .event_content{
+                    display: flex;
+                    flex-direction: column;
+                    margin: auto 0;
                     font-size: 18px;
                     font-family: gotham-light;
                     font-weight: 500;
@@ -595,7 +630,7 @@ main{
         background-color: var(--color-second);
     }
     #btn_contato{
-        width: 10%;
+        width: 20vw;
     }
 .txt_area{
     width: 15vw;

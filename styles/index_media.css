@@ -1,108 +1,61 @@
-@media screen and (min-width: 720px){
-    #main_header{
-        justify-content: space-between;
-        }
-        #main_header img{
-            width: 50%;
-        }
-
-    #main_nav{
-        justify-content: end;
-    }
-
-    #main_nav img{
-        display: none;
-    }
-    #main_nav ul{
-        display: flex;
-        }
-        #main_nav li{
-            text-align: center;
-            margin-left: 1rem;
-            }
-            #main_nav li a:hover{
-                color: var(--color-medium-blue);
-                transition-duration: 0.8s;
-            }
-    #inscription{
-        justify-content: end;
-        }
-    .information ul{
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        font-size: 18px;
-        text-align:center;
-        }
-    #schedule{
-        background-color: var(--color-dark);
-    }
-    .text{
-        color: var(--color-light);
-        }
-        .text span{
-            font-weight: bolder;
-            color: var(--color-second);
-        }
-    .event_container{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-        .event_article{
-            width: 50%;
-        }
-        .event_container h2,h3{
-            color: var(--color-light);
-            }
-        .event_container p{
-            color: var(--color-blue);
-            }
-            .event_article p{
-                color: var(--color-light);
-            }
-            #secondary_slide_container{
-                background-color: var(--color-light);
-            }
-        }
+@media screen and (max-width:768px){
 
 
-@media screen and (min-width: 768px){
-    body{
-        background-image: url(/components/images/biogas.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        }
-            #main_header, #inscription, #information_container, #call, #main_slide_container, #schedule, #secondary_slide_container, #main_footer{
-                padding: 0 6rem 0 6rem;
-            }
-            #main_header{
-                
-                background-color: var(--color-light);
-            }
-            #logo img{
-                width: 20%;
-            }
-            #inscription{
-                justify-content: end;
-                }
-            .inscription_detail{
-                width: 60%;
-                }
-            #information_container{
-                height: 20vh;
-                }
-                #main_slide_container img{
-                    padding: 0;
-                    width: 100%;
-                    }
-                    #main_slide_container .efect:hover{
-                        background-color: rgba(63, 63, 63, 0.7);
-                    }
-            #call{
-                background-color: var(--color-light);
-            }
-            .event_content{
-                padding: 0 0.5rem 0 0.5rem;
-                }
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav_menu{
+        position: fixed;
+        flex-direction: column;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        transition: 0.3s;
+        background-color: var(--color-light);
+    }
+    .nav_item{
+        margin: 16px 0;
+    }
+    .nav_menu.active{
+        left: 0;
+    }
+
+    .inscription_detail{
+        width: 100%;
+    }
+    .call_frame, .slider, .manual-navigation, .navigation-auto{
+        width: 100%;
+    }
+    /* .slides{
+        background-color: aquamarine;
+        width: 800px;
+    } */
+
+    /* #main_header, 
+    #inscription, 
+    #call, 
+    #information_container, 
+    #main_slide_container, 
+    #schedule, 
+    #secondary_slide_container,
+    #main_footer{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    } */
 }

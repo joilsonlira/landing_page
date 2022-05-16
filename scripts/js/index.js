@@ -31,3 +31,12 @@ function next_slide(){
     }
 document.getElementById("radio" + count).checked = true;
 }
+
+//HAMBURGER MENU
+var hamburger = document.querySelector(".hamburger");
+var nav_menu = document.querySelector(".nav_menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    nav_menu.classList.toggle("active");
+})
