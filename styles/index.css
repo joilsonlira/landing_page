@@ -625,9 +625,9 @@ main{
     width: 30vw;
     height: auto; /* Could be more or less, depending on screen size */
 }
-.modal_form_contato{
+/* .modal_form_contato{
 
-}
+} */
 .modal_form{
     display: flex;
     justify-content: center;
