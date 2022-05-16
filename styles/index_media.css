@@ -105,6 +105,7 @@
 
     .modal-content{
         width: 90vw;
+        margin: 50% auto;
     }
     .btn_endereco{
         width: 100%;

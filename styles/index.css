@@ -142,18 +142,19 @@ main{
             font-size: 1.5rem;
             font-weight: 400;
             text-align: start;
-            }
-            .inscription_detail h2{
-                color: var(--color-medium-blue);
-                text-align: start;
-                font-weight: 400;
-                margin: 55px 0 55px 0;
-            }
-            .inscription_detail p{
-                color: var(--color-dark);
-                font-size: 18px;
-                line-height: 24px;
-                margin-bottom: 55px;
+        }
+        .inscription_detail h2{
+            color: var(--color-medium-blue);
+            text-align: start;
+            font-weight: 400;
+            margin: 55px 0 55px 0;
+        }
+        .inscription_detail p{
+            color: var(--color-dark);
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 24px;
+            margin-bottom: 55px;
             }
             .inscription_detail h3{
                 color: var(--color-dark);
@@ -171,7 +172,7 @@ main{
                 border-radius: 50px;
                 border-style: none;
                 width: 15vw;
-                height: 5vh;
+                height: 8vh;
                 cursor: pointer;
                 font-size: 1.5rem;
                 font-weight: bolder;
@@ -620,7 +621,7 @@ main{
 
   /* Modal Content/Box */
 .modal-content {
-    margin: 5% auto; /* 15% from the top and centered */
+    margin: 10% auto; /* 15% from the top and centered */
     border: 1px solid #888;
     width: 30vw;
     height: auto; /* Could be more or less, depending on screen size */
@@ -649,6 +650,7 @@ main{
     width: 100%;
     height: 20%;
 }
+
 .modal_form input[type="button"], .btn_endereco, #myBtn, #btn_contato{
         display: flex;
         justify-content: center;
@@ -658,7 +660,7 @@ main{
         border-radius: 50px;
         border-style: none;
         width: 45%;
-        height: 5vh;
+        height: 10vh;
         font-family: gothan-bold;
         font-size: 0.9rem;
         color: var(--color-light);
