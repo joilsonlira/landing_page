@@ -639,7 +639,7 @@ main{
     text-align: center;
     background-color: var(--color-medium-blue);
 }
-.modal_form input[type="text"]{
+.modal_form input[type="text"], input[type="number"]{
     margin: 0.5rem;
     width: 15vw;
     height: 5vh;
