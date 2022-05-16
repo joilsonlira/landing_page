@@ -664,7 +664,9 @@ main{
         color: var(--color-light);
         background-color: var(--color-second);
     }
-
+    .btn_endereco{
+        padding: 3%;
+    }
     #btn_contato{
         width: 20vw;
     }
