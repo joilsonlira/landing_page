@@ -15,6 +15,7 @@
     }
     #logo{
         justify-content: center;
+        width: 50%;
         margin: 0 auto;
     }
     .nav_menu{
@@ -42,7 +43,7 @@
         width: 100%;
     }
     #inscription{
-        background:rgb(231, 230, 230, 1);
+        flex-direction: column;
     }
     .inscription_detail{
         width: 100%;
