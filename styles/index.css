@@ -129,7 +129,7 @@ main{
         grid-area: inscription;
         display: flex;
         justify-content: end;
-        background: linear-gradient(rgba(243, 243, 243, 0.4), rgba(15, 72, 75, 0.4)), url(/components/images/background_landing_page.jpeg);
+        background: linear-gradient(rgba(243, 243, 243, 0.7), rgba(209, 209, 209, 0.4)), url(/components/images/background_landing_page.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -150,7 +150,7 @@ main{
             margin: 55px 0 55px 0;
         }
         .inscription_detail p{
-            color: var(--color-dark);
+            color: #292929;
             font-size: 18px;
             font-weight: bold;
             line-height: 24px;
