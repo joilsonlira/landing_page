@@ -29,7 +29,7 @@ a{
     --color-light-blue: #75d3d7;
     --color-dark: #3f3f3f;
     --color-medium-dark: #44546a;
-    --color-light: #e7e6e6;
+    --color-light: #e8e6e6;
 }
 
 html, body{
@@ -129,7 +129,8 @@ main{
         grid-area: inscription;
         display: flex;
         justify-content: end;
-        background: linear-gradient(rgba(243, 243, 243, 0.7), rgba(209, 209, 209, 0.4)), url(/components/images/background_landing_page.jpeg);
+        background-color: var(--color-blue);
+        /* background: linear-gradient(-90deg, rgba(231, 230, 230, .9) 55%, rgba(209, 209, 209, 0.2)), url(/components/images/background_landing_page.jpeg); */
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -144,7 +145,7 @@ main{
             text-align: start;
         }
         .inscription_detail h2{
-            color: var(--color-medium-blue);
+            color: var(--color-dark);
             text-align: start;
             font-weight: 500;
             margin: 55px 0 55px 0;
@@ -161,7 +162,7 @@ main{
                 margin-bottom: 55px;
             }
             .inscription_detail .tema{
-                color: var(--color-blue);
+                color: var(--color-second);
             }
             .inscription_detail button{
                 display: flex;

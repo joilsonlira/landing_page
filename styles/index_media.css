@@ -41,7 +41,9 @@
         width: 100%;
         width: 100%;
     }
-
+    #inscription{
+        background:rgb(231, 230, 230, 1);
+    }
     .inscription_detail{
         width: 100%;
     }
