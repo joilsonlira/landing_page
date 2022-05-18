@@ -83,6 +83,7 @@ main{
             justify-content: end;
             align-items: center;
             width: 100%;
+            box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
         }
         #main_nav .nav_menu{
             padding: 0 2rem 0 2rem;
@@ -593,6 +594,9 @@ main{
                         justify-content: center;
                         align-items:center;
                         }
+                        .social:hover{
+                            background-color: var(--color-light-blue);
+                        }
                     .social img{
                         width: 55%;
                     }
@@ -680,11 +684,28 @@ main{
         color: var(--color-light);
         background-color: var(--color-second);
     }
+    .modal_form input[type="button"]:hover{
+        background-color: #E9A365;
+
+    }
+    .btn_inscription:hover{
+        background-color: #E9A365;
+    }
+    
+    #myBtn:hover{
+        background-color: #E9A365;
+    }
     .btn_endereco{
         padding: 3%;
     }
+    .btn_endereco:hover{
+        background-color: #E9A365;
+    }
     #btn_contato{
         width: 20vw;
+    }
+    #btn_contato:hover{
+        background-color: #E9A365;
     }
 .txt_area{
     width: 15vw;
