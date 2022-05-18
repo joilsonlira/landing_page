@@ -58,7 +58,7 @@ main{
         display: flex;
         align-items: center;
         justify-content:space-between;
-        padding: 0 1rem 0 1rem;
+        z-index: 1;
         }
         #logo{
             display: flex;
@@ -69,14 +69,12 @@ main{
             width: 30vw;
             height: 100%;
             clip-path: circle(100%);
-            /* background: rgb(2,0,36);
-            background: linear-gradient(180deg, rgba(2,0,36,0) 10%, rgba(255,255,255,1) 10%, rgba(2,0,36,0) 70%); */
 
-            background: rgb(255,255,255);
-            background: radial-gradient(circle, rgba(255,255,255,.8) 30%, rgba(148,187,233,0) 70%,rgba(148,187,233,0) 70%);
+            /* background: rgb(255,255,255);
+            background: radial-gradient(circle, rgba(255,255,255,.8) 30%, rgba(148,187,233,0) 70%,rgba(148,187,233,0) 70%); */
         }
         #logo img{
-                width: 80%;
+                width: 100%;
                 /* height: 100%; */
             }
         #main_nav{
