@@ -566,7 +566,7 @@ main{
         align-items: center;
         justify-content: space-between;
         padding: 1rem;
-        height: 50vh;
+        height: 30vh;
         }
         .social_container{
             display: flex;
