@@ -155,10 +155,13 @@ main{
         display: flex;
         justify-content: end;
         background-color: var(--color-blue);
-        /* background: linear-gradient(-90deg, rgba(231, 230, 230, .9) 55%, rgba(209, 209, 209, 0.2)), url(/components/images/background_landing_page.jpeg); */
+        /* background: linear-gradient(-90deg, rgba(231, 230, 230, .9) 55%, rgba(209, 209, 209, 0.2)), url(/components/images/ativo_com_seminário.png); */
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 30%, rgba(0,153,168,1) 100%);
+        /* background:  url(/components/images/ativo_com_seminário.png); */
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         margin-bottom: 2rem;
         }
         .inscription_detail{

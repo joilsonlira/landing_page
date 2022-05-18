@@ -20,7 +20,7 @@
         margin: 0 auto;
     }
     .logo img{
-        width: 50vw;
+        width: 30vw;
     }
     #main_nav{
         justify-content: end;
@@ -66,6 +66,12 @@
     }
     #inscription{
         flex-direction: column;
+        background-image: none;
+        height: 100%;
+        background-color: var(--color-blue);
+    }
+    .logo_inscription > img{
+        display: none;
     }
     .inscription_detail{
         width: 100%;
