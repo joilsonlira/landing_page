@@ -52,7 +52,16 @@ main{
         'footer'
         ;
     }
-    
+    .logo_inscription{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60vw;
+        height: 100%;
+    }
+    .logo_inscription img{
+        width: 100%;
+    }
     #main_header{
         grid-area: header;
         display: flex;
@@ -60,21 +69,21 @@ main{
         justify-content:space-between;
         z-index: 1;
         }
-        #logo{
+        .logo{
             display: flex;
-            justify-content: center;
+            justify-content: start;
             align-items: center;
             padding: 1rem;
             margin: auto;
-            width: 50vw;
-            height: 100%;
-            
+            width: 100%;
+            z-index: 1;
+            /* height: 100%; */
 
             /* background: rgb(255,255,255);
             background: radial-gradient(circle, rgba(255,255,255,.8) 30%, rgba(148,187,233,0) 70%,rgba(148,187,233,0) 70%); */
         }
-        #logo img{
-                width: 100%;
+        .logo img{
+                width: 15vw;
                 /* height: 100%; */
             }
         #main_nav{
@@ -89,8 +98,9 @@ main{
             padding: 0 2rem 0 2rem;
             display: flex;
             align-items: center;
-            justify-content: center;
-            width: 100%;
+            justify-content: space-between;
+
+            width: 190%;
             height: 10vh;
             z-index: 1;
             background-color: var(--color-light);
@@ -609,10 +619,10 @@ main{
                     }
                     .logo{
                         display: flex;
-                        justify-content: center;
+                        background-color: var(--color-light);
                         align-items: center;
-                        width: 100%;
-                        height: 100%;
+                        /* width: 100%; */
+                        height: 10vh;
                     }
                     .contato{
                         display: flex;
