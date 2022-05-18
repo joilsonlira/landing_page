@@ -2,6 +2,7 @@
 
     .hamburger{
         display: block;
+        z-index: 1;
     }
 
     .hamburger.active .bar:nth-child(2){
@@ -15,17 +16,32 @@
     }
     #logo{
         justify-content: center;
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
+    }
+    #main_nav{
+        justify-content: end;
+        align-items: center;
+        padding-right: 2rem;
+        box-shadow:none;
+        height: 10vh;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+
+        background-color: var(--color-light);
+    }
+    #main_nav .nav_menu{
+        height: 40vh;
     }
     .nav_menu{
         position: fixed;
         flex-direction: column;
         left: -100%;
-        top: 70px;
+        top: 30px;
         gap: 0;
         width: 100%;
         text-align: center;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         transition: 0.3s;
@@ -108,7 +124,7 @@
 
     .modal-content{
         width: 90vw;
-        margin: 50% auto;
+        margin: 25% auto;
     }
     .btn_endereco{
         width: 100%;
