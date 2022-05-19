@@ -740,7 +740,7 @@ main{
     height: 20%;
 }
 
-.modal_form input[type="button"], .btn_endereco, #myBtn, #btn_contato{
+.modal_form input[type="submit"], .btn_endereco, #myBtn, #btn_contato{
         display: flex;
         justify-content: center;
         align-items: center;

@@ -150,7 +150,7 @@
     .modal_form input[type="text"]{
         width: 100%;
     }
-    .modal_form input[type="button"]{
+    .modal_form input[type="submit"]{
         width: 100%;
     }
     .txt_area{
