@@ -84,7 +84,6 @@ main{
         }
         .logo img{
                 width: 15vw;
-                /* height: 100%; */
             }
         #main_nav{
             position: fixed;
@@ -505,9 +504,9 @@ main{
                         width: 80%;
                         font-size: 20px;
                         font-weight: bold;
-                        -webkit-transition: .5s ease-in-out;
-                        -moz-transition: .5s ease-in-out;
-                        transition: .5s ease-in-out;
+                        -webkit-transition: 0.7s ease;
+                        -moz-transition: 0.7s ease;
+                        transition: 0.7s ease;
                         color: var(--color-light);
                         background-color: var(--color-main);
                     }

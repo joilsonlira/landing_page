@@ -107,6 +107,12 @@
     #schedule{
         width: 100%;
     }
+    .hotel_container{
+        height: auto;
+    }
+    .hotel{
+        width: 100%;
+    }
     .text{
         width: 90%;
     }
