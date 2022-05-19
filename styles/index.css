@@ -768,7 +768,7 @@ main{
         background-color: #E9A365;
     }
     .btn_endereco{
-        padding: 3%;
+        padding: 1rem;
     }
     .btn_endereco:hover{
         background-color: #E9A365;
