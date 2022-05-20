@@ -82,6 +82,7 @@ main{
             /* background: rgb(255,255,255);
             background: radial-gradient(circle, rgba(255,255,255,.8) 30%, rgba(148,187,233,0) 70%,rgba(148,187,233,0) 70%); */
         }
+
         .logo img{
                 width: 15vw;
             }
