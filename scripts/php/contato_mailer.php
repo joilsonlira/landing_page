@@ -24,7 +24,7 @@ $corpo .= "Nome: " . $name . "\n";
 $corpo .= "Email: " . $email . "\n";
 $corpo .= "Comentários: " . $message . "\n";
 
-$email_to = 'lirajoilson@gmail.com';
+$email_to = 'mkt@anexoeventos.com.br';
 //não esqueça de substituir este email pelo seu.
 
 $status = mail($email_to, $subject, $corpo, $headers);
