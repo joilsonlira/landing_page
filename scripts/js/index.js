@@ -14,6 +14,7 @@ function close_modal(modal_name){
         return;
 
         modal.style.display = 'none';
+        
 }
 
 //SLIDE SCRIPT
