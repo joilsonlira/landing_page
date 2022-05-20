@@ -354,11 +354,11 @@
                     <div class="modal-content">
                         <form class="modal_form"  action="./scripts/php/patrocinador_mailer.php" method="post">
                             <h2>Quero ser um patrocinador</h2>
-                            <input type="text" name="nome" placeholder="Nome">
-                            <input type="text" name="empresa" placeholder="Empresa">
-                            <input type="text" name="email" placeholder="E-mail">
-                            <input type="text" name="whatsapp" placeholder="WhatsApp">
-                            <input type="submit" onclick="close_modal('modal_patrocinar')" value="Enviar">
+                            <input type="text" name="nome" placeholder="Nome" maxlength="30" minlength="2" required>
+                            <input type="text" name="empresa" placeholder="Empresa" maxlength="25" required>
+                            <input type="email" name="email" placeholder="E-mail" maxlength="50" required>
+                            <input type="text" name="whatsapp" placeholder="WhatsApp" required>
+                            <input type="submit" value="Enviar">
                         </form>
                     </div>
                 </div>
@@ -367,11 +367,11 @@
                     <div class="modal-content">
                         <form class="modal_form"  action="./scripts/php/contato_mailer.php" method="post">
                             <h2>Fale conosco</h2>
-                            <input type="text" name="name" placeholder="Nome">
-                            <input type="text" name="email" placeholder="E-mail">
-                            <input type="text" name="subject" placeholder="assunto">
-                            <textarea name="message" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
-                            <input type="submit" onclick="close_modal('modal_contato')" value="Enviar">
+                            <input type="text" name="name" placeholder="Nome" maxlength="30" minlength="2" required>
+                            <input type="email" name="email" placeholder="E-mail" maxlength="50" required>
+                            <input type="text" name="subject" placeholder="assunto" maxlength="30" minlength="2" required>
+                            <textarea name="message" placeholder="Mensagem" maxlength="200" required></textarea>
+                            <input type="submit" value="Enviar">
                         </form>
                     </div>
                 </div>

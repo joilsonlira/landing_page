@@ -727,12 +727,25 @@ main{
     text-align: center;
     background-color: var(--color-medium-blue);
 }
-.modal_form input[type="text"], input[type="number"]{
+.modal_form input[type="text"], input[type="email"]{
     padding: 1rem;
     margin: 0.5rem;
     width: 100%;
     height: 5vh;
 }
+
+.modal_form input[type="text"]:invalid, 
+.modal_form input[type="email"]:invalid,
+.modal_form  textarea:invalid{
+    border-color: red;
+}
+
+.modal_form input[type="text"]:valid, 
+.modal_form input[type="email"]:valid,
+.modal_form  textarea:valid{
+    border-color: green;
+}
+
 .modal_form  textarea{
     padding: 1rem;
     margin: 0.5rem;
