@@ -17,9 +17,9 @@
 
     $mailer = new PHPMailer(true); //para habilitar o despaaro de exeptions
 
-    $meu_Host = 'smtp.ethereal.email';//host do servidor de email
-    $meu_username = 'guy.willms6@ethereal.email';//usuario do servidor de email
-    $meu_password = '7M6yfdzUB5X2cZhr6s';//senha do servidor de email
+    $meu_Host = 'smtp.umbler.com';//host do servidor de email
+    $meu_username = 'joilson@joilsonlira.com.br';//usuario do servidor de email
+    $meu_password = 'J261Poke@@';//senha do servidor de email
     try{
         // $mailer -> SMTPDebug = SMTP::DEBUG_SERVER;
         $mailer -> isSMTP(); //para enviar via função nativa do php utilize o $mailer -> isMail()
