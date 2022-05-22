@@ -350,7 +350,7 @@
                 <div id="modal_patrocinar" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <form class="modal_form">
+                        <form class="modal_form" action="patrocinador_mailer.php" method="POST">
                             <h2>Quero ser um patrocinador</h2>
                             <input type="text" name="nome_patrocinador" placeholder="Nome" required maxlength="50">
                             <input type="text" name="empresa_patrocinador" placeholder="Empresa" required maxlength="50">
