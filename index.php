@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/index_media.css">
 
-    <script src="./scripts/js/index.js"></script>
-
     <!--FAVICON-->
     <link rel="icon" type="image/x-icon" href="./components/images/facvicon.png">
     <title>Seminário técnico da Abiogas 2022 </title>
