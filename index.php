@@ -365,10 +365,11 @@
                 <div id="modal_contato" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <form class="modal_form">
+                        <form class="modal_form" action="contato_mailer.php" method="POST">
                             <h2>Fale conosco</h2>
                             <input type="text" name="nome_contato" placeholder="Nome">
-                            <input type="text" name="email_contato" placeholder="E-mail">
+                            <input type="email" name="email_contato" placeholder="E-mail">
+                            <input type="text" name="assunto" placeholder="Assunto">
                             <textarea name="mensagem_contato" placeholder="Mensagem"></textarea>
                             <input type="submit" value="Enviar">
                         </form>
