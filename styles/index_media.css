@@ -147,10 +147,10 @@
     .btn_endereco{
         width: 100%;
     }
-    .modal_form input[type="text"]{
+    .modal_form input[type="text"], .modal_form input[type="email"]{
         width: 100%;
     }
-    .modal_form input[type="button"]{
+    .modal_form input[type="submit"], .modal_form input[type="button"]{
         width: 100%;
     }
     .txt_area{

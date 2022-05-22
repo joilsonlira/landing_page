@@ -352,10 +352,10 @@
                     <div class="modal-content">
                         <form class="modal_form">
                             <h2>Quero ser um patrocinador</h2>
-                            <input type="text" name="nome_patrocinador" placeholder="Nome">
-                            <input type="text" name="empresa_patrocinador" placeholder="Empresa">
-                            <input type="text" name="email_patrocinador" placeholder="E-mail">
-                            <input type="text" name="whatsapp_patrocinador" placeholder="WhatsApp">
+                            <input type="text" name="nome_patrocinador" placeholder="Nome" required maxlength="50">
+                            <input type="text" name="empresa_patrocinador" placeholder="Empresa" required maxlength="50">
+                            <input type="email" name="email_patrocinador" placeholder="E-mail" required maxlength="50">
+                            <input type="tel" name="whatsapp_patrocinador" placeholder="WhatsApp" required>
                             <input type="submit"value="Enviar">
                         </form>
                     </div>
@@ -365,10 +365,10 @@
                     <div class="modal-content">
                         <form class="modal_form" action="contato_mailer.php" method="POST">
                             <h2>Fale conosco</h2>
-                            <input type="text" name="nome_contato" placeholder="Nome">
-                            <input type="email" name="email_contato" placeholder="E-mail">
-                            <input type="text" name="assunto" placeholder="Assunto">
-                            <textarea name="mensagem_contato" placeholder="Mensagem"></textarea>
+                            <input type="text" name="nome_contato" placeholder="Nome" required maxlength="50">
+                            <input type="email" name="email_contato" placeholder="E-mail" required maxlength="50">
+                            <input type="text" name="assunto" placeholder="Assunto" required maxlength="25">
+                            <textarea name="mensagem_contato" placeholder="Mensagem" required maxlength="250"></textarea>
                             <input type="submit" value="Enviar">
                         </form>
                     </div>

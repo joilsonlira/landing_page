@@ -728,7 +728,7 @@ main{
     text-align: center;
     background-color: var(--color-medium-blue);
 }
-.modal_form input[type="text"], input[type="number"]{
+.modal_form input[type="text"], .modal_form input[type="tel"], input[type="email"]{
     padding: 1rem;
     margin: 0.5rem;
     width: 100%;
@@ -740,8 +740,16 @@ main{
     width: 100%;
     height: 20%;
 }
+.modal_form input:invalid{
+    color: red;
+    border-color: red;
+}
+.modal_form input:valid{
+    color: green;
+    border-color: green;
+}
 
-.modal_form input[type="button"], .btn_endereco, #myBtn, #btn_contato{
+.modal_form input[type="button"], .modal_form input[type="submit"], .btn_endereco, #myBtn, #btn_contato{
         display: flex;
         justify-content: center;
         align-items: center;

@@ -73,6 +73,25 @@
 <title>Seminário técnico da Abiogas 2022 </title>
 
 </head>
+<header id="main_header"><!--cabeçalho principal da pagina-->
+            <nav id="main_nav"><!-- container para o Menu principal de navegação-->
+                <section class="logo">
+                    <img src="./components/images/logo_refeito.png" alt="logo do seminario ABiogas 2022">
+                </section>
+                <ul class="nav_menu"><!--Menu principal-->
+                    <li class="nav_item"><a href="#inscription" class="nav_link">Inscreva-se</a></li>
+                    <li class="nav_item"><a href="#call" class="nav_link">Quem somos</a></li>
+                    <li class="nav_item"><a href="#schedule" class="nav_link">Programação</a></li>
+                    <li class="nav_item"><a href="#secondary_slide_container" class="nav_link">Patrocinadores</a></li>
+                    <li class="nav_item"><a href="#main_footer" class="nav_link" onclick="open_modal('modal_contato')">Fale conosco</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
 <section id="secondary_slide_container">
             <section class="patrocinadores">
                 <header class="edicoes_title">
@@ -117,7 +136,7 @@
                             <?php
                                 echo "<h2>".$mensagem_envio."</h2>";
                             ?>
-                            <input type="button" value="Enviar" onclick="close_modal('modal_contato')">
+                            <input type="button" value="OK" onclick="close_modal('modal_contato')">
                         </form>
                     </div>
                 </div>
@@ -142,7 +161,7 @@
     <script>
         setTimeout(function() {
         window.location.href = "http://localhost:8000/";
-        }, 5000);</script>
+        }, 1000);</script>
     <script src="./scripts/js/index.js"></script>
 
 </body>
