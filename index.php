@@ -354,11 +354,11 @@
                     <div class="modal-content">
                         <form class="modal_form">
                             <h2>Quero ser um patrocinador</h2>
-                            <input type="text" placeholder="Nome">
-                            <input type="text" placeholder="Empresa">
-                            <input type="text" placeholder="E-mail">
-                            <input type="text" placeholder="WhatsApp">
-                            <input type="button" onclick="close_modal('modal_patrocinar')" value="Enviar">
+                            <input type="text" name="nome_patrocinador" placeholder="Nome">
+                            <input type="text" name="empresa_patrocinador" placeholder="Empresa">
+                            <input type="text" name="email_patrocinador" placeholder="E-mail">
+                            <input type="text" name="whatsapp_patrocinador" placeholder="WhatsApp">
+                            <input type="submit"value="Enviar">
                         </form>
                     </div>
                 </div>
@@ -367,10 +367,10 @@
                     <div class="modal-content">
                         <form class="modal_form">
                             <h2>Fale conosco</h2>
-                            <input type="text" placeholder="Nome">
-                            <input type="text" placeholder="E-mail">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
-                            <input type="button" onclick="close_modal('modal_contato')" value="Enviar">
+                            <input type="text" name="nome_contato" placeholder="Nome">
+                            <input type="text" name="email_contato" placeholder="E-mail">
+                            <textarea name="mensagem_contato" placeholder="Mensagem"></textarea>
+                            <input type="submit" value="Enviar">
                         </form>
                     </div>
                 </div>
