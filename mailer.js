@@ -1,4 +1,5 @@
-const nodemailer = require('nodemailer');
+function email_contato(){
+    const nodemailer = require('nodemailer');
 
 var input = document.querySelector("#name_contato");
 var nome = input.value;
@@ -22,7 +23,7 @@ const transporter = nodemailer.createTransport({
 
 const mailOptions = {
     from: 'lirajoilson@gmail.com',
-    to: 'mkt@anexoeventos.com.br',
+    to: 'lirajoilson@gmail.com',
     nome: nome,
     email: email,
     subject: 'E-mail enviado!',
@@ -36,3 +37,5 @@ transporter.sendMail(mailOptions, function(error, info){
     console.log('Email enviado: ' + info.response);
     }
 });
+}
+
