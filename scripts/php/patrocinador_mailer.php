@@ -14,9 +14,9 @@ $subject = "Quero ser um patrocinador";
 
 
 //pega os dados que foi digitado no ID message.
-$myEmail = "joilson@joilsonlira.com.br";//é necessário informar um e-mail do próprio domínio
+$myEmail = "contato@seminario-tecnico-abiogas.com.br";//é necessário informar um e-mail do próprio domínio
 $headers = "From: $myEmail\r\n";
-$headers .= "Reply-To: $email\r\n";
+$headers .= "Reply-To: $myEmail\r\n";
 
 /*abaixo contém os dados que serão enviados para o email
 cadastrado para receber o formulário*/
