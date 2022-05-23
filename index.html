@@ -379,7 +379,7 @@
                 <div id="modal_contato" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <form class="modal_form" method="POST" data-netlify="true">
+                        <form class="modal_form" onsubmit="submitForm(event)">
                             <div class="header_modal">
                                 <button class="btn_motal_close" onclick="close_modal('modal_contato')" ><img src="./components/images/Union.svg"></input>
                             </div>
@@ -410,5 +410,22 @@
         </footer>
     </main>
     <script src="./scripts/js/index.js"></script>
-    <script src="./mailer.js"></script>
+    <script>
+        function submitForm(event) {
+          // Stop the browser's default behavior.
+          event.preventDefault();
+          // Retrieve data from the form.
+          const formData = new FormData(event.target);
+          const request = new XMLHttpRequest();
+          // Convert data to JSON object.
+          var jsonData = {};
+          formData.forEach((value, key) => (jsonData[key] = value));
+          // Send the data to the Netlify function.
+          request.open("POST", "/.netlify/functions/send-email");
+          request.send(JSON.stringify(jsonData));
+          // Clear the form.
+        //   alert("Email request submitted!");
+          event.target.reset();
+        }
+      </script>
 </body>
