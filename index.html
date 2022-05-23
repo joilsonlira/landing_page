@@ -46,9 +46,9 @@
                 <img src="./components/images/logo_refeito.png" alt="">
             </div>
             <article class="inscription_detail"><!--sessão destinada a descrição do evento com um botão de inscrição-->
-                <h2>Seminário técnico da <span>ABiogás <br> 2022 </span></h2>
+                
                 <h3><span class="tema">Tema:</span> BIOGÁS NA ROTA DE ZERO EMISSÕES</h3>
-                <p>A A<span>B</span>iogás organiza, anualmente, eventos focados no desenvolvimento do mercado de biogás. Com o objetivo de abordar as principais demandas do setor. ada evento aborda um assunto específico atual e reúne os principais especialistas do setor no Brasil e no exterior para uma troca de conhecimento e oportunidades de negócios.</p>
+                
                 <button class="btn_inscription">Inscreva-se</button>
             </article>
         </section>
@@ -93,7 +93,22 @@
                 </div>
             </div><!--FIM SLIDE-->
         </sectiom><!--sessão para chamada de ação e acontecimentos-->
-
+        <section id="main_slide_container">
+            <header class="edicoes_title">
+                <div class="icon">
+                    <img src="./components/images/icon_header.png" alt="">
+                </div> 
+                <h2>SEMINÁRIO TÉCNICO ABIOGÁS 2022</h2>
+            </header>
+            <div class="videos">
+                <video controls="controls">
+                    <source src="/video.mp4" type="video/mp4">
+                    <object>
+                    <embed  src="/video.mp4">
+                    </object>
+                </video>
+            </div>
+        </section>
         <section id="information_container">
             <header class="edicoes_title">
                 <div class="icon">
@@ -135,55 +150,19 @@
         </section>
         </section><!--sessão destinada a textos simples-->
 
-        <section id="main_slide_container">
-            <header class="edicoes_title">
-                <div class="icon">
-                    <img src="./components/images/icon_header.png" alt="">
-                </div> 
-                <h2>SEMINÁRIO TÉCNICO ABIOGÁS 2022</h2>
-            </header>
-            <div class="videos">
-                <video src="./components/video/ABiogas_Teaser_Seminario2022_v2_leg_ptbr.mp4"></video>
-            </div>
-        </section>
         <!--sessão destinada a slide com controle e (ou) de video-->
 
         <section id="schedule">
             <section class="text">
-                <p>O Seminário Técnico ABiogás será realizado em São Paulo, no dia <span>30 DE JUNHO DE 2022</span>, das <span>9h às 18h</span>.</p>
-                <p>Local: Espaço APAS - Lapa - São Paulo</p>
-
+                <!--<p>O Seminário Técnico ABiogás será realizado em São Paulo, no dia <span>30 DE JUNHO DE 2022</span>, das <span>9h às 18h</span>.</p>
+                <p>Local: Espaço APAS - Lapa - São Paulo</p>-->
+                    <div class="endereco_imgs">
+                        <img src="./components/images/1.png" alt="">
+                        <img src="./components/images/2.png" alt="">
+                        <img src="./components/images/3.png" alt="">
+                    </div>
                 <button class="btn_endereco"><a href="https://www.google.com/maps/place/APAS+-+Associa%C3%A7%C3%A3o+Paulista+de+Supermercados/@-23.533824,-46.713912,10z/data=!4m5!3m4!1s0x0:0x8212404881c7839!8m2!3d-23.5338238!4d-46.7139116?hl=pt-BR" target="_blank">R. Pio XI, 1200 - Alto da Lapa, São Paulo - SP, 05060-001</a></button>
                 <!--Sugestões de hoteis-->
-                <div class="hotel_container">
-                    
-
-                    <header class="sugestao_header">
-                        <h3>Sugestão de hotéis</h3>
-                    </header>
-                    <section class="sugestao">
-                        <ul class="sugestao_nav">
-                            <a href="https://www.wzhoteljardins.com.br/" target="_blank" class="hotel">
-                                <img src="./components/images/fi_map-pin.svg" alt="">
-                                <li>
-                                    WZ HOTEL JARDINS
-                                </li>
-                            </a>
-                            <a href="https://www.wzhoteljardins.com.br/" target="_blank" class="hotel">
-                                <img src="./components/images/fi_map-pin.svg" alt="">
-                                <li>
-                                    IBIS STYLES
-                                </li>
-                            </a>
-                            <a href="https://www.wzhoteljardins.com.br/" target="_blank" class="hotel">
-                                <img src="./components/images/fi_map-pin.svg" alt="">
-                                <li>
-                                    PANAMBY HOTEL SÃO PAULO
-                                </li>
-                            </a>
-                        </ul>
-                    </section>
-                </div>
 
                 <header class="edicoes_title">
                     <div class="icon">
@@ -310,8 +289,40 @@
                     </main>
                 </article>
             </section>
-        </section><!--sessão destinada ao cronograma-->
 
+            <div class="hotel_container">
+                    
+                <header class="sugestao_header">
+                    <h3>Sugestão de hotéis</h3>
+                </header>
+                <section class="sugestao">
+                    <ul class="sugestao_nav">
+                        <a href="https://www.wzhoteljardins.com.br/" target="_blank" class="hotel">
+                            <img src="./components/images/fi_map-pin.svg" alt="">
+                            <li>
+                                WZ HOTEL JARDINS
+                            </li>
+                        </a>
+                        <a href="https://ibis.accor.com/brasil/index.pt-br.shtml" target="_blank" class="hotel">
+                            <img src="./components/images/fi_map-pin.svg" alt="">
+                            <li>
+                                IBIS STYLES
+                            </li>
+                        </a>
+                        <a href="https://hotelpanambysaopaulo.com.br/" target="_blank" class="hotel">
+                            <img src="./components/images/fi_map-pin.svg" alt="">
+                            <li>
+                                PANAMBY HOTEL SÃO PAULO
+                            </li>
+                        </a>
+                    </ul>
+                </section>
+            </div>
+
+        </section><!--sessão destinada ao cronograma-->
+        
+        
+        
         <section id="secondary_slide_container">
             <section class="patrocinadores">
                 <header class="edicoes_title">
@@ -365,11 +376,11 @@
                 <div id="modal_contato" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <form class="modal_form">
+                        <form class="modal_form" action="/mailer.js">
                             <h2>Fale conosco</h2>
-                            <input type="text" placeholder="Nome">
-                            <input type="text" placeholder="E-mail">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                            <input id="nome_contato" nome="nome_contato" type="text" placeholder="Nome">
+                            <input id="email_contato" nome="email_contato" type="text" placeholder="E-mail">
+                            <textarea name="mensagem_contato" id="mensagem_contato" placeholder="Mensagem"></textarea>
                             <input type="button" onclick="close_modal('modal_contato')" value="Enviar">
                         </form>
                     </div>

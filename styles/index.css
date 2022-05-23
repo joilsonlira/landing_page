@@ -393,6 +393,10 @@ main{
                         line-height: 24px;
                         color: var(--color-blue);
                     }
+                    .endereco_imgs{
+                        display: flex;
+                        flex-direction: column;
+                    }
     #main_slide_container{
         display: flex;/*flex*/
         justify-content: center;
@@ -408,8 +412,9 @@ main{
             width: 50%;
             margin-top: 2rem;
             cursor: pointer;
+            
             }
-            .videos video[poster]{
+            .videos video{
                 width: 100%;
             }
 
