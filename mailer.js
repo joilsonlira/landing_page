@@ -11,7 +11,7 @@ var text = input.value;
 
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
-    port: 587,
+    port: 25,
     secure: false, // true for 465, false for other ports
     auth: {
         user: "lirajoilson@gmail.com",

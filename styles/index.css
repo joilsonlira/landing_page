@@ -179,6 +179,10 @@ main{
             margin: 55px 0 55px 0;
         }
         .inscription_detail p{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             color: #292929;
             font-size: 18px;
             font-weight: bold;
@@ -396,6 +400,7 @@ main{
                     .endereco_imgs{
                         display: flex;
                         flex-direction: column;
+                        width: 70%;
                     }
     #main_slide_container{
         display: flex;/*flex*/
@@ -696,7 +701,24 @@ main{
                     }
 
 /*btnMotal*/
-
+.header_modal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+}
+.btn_motal_close{
+    display: flex;
+    width: 6%;
+    height: auto;
+    border: none;
+    background-color: transparent;
+}
+.btn_motal_close img{
+    width: 100%;
+}
 
 /* The Modal (background) */
 .modal {
@@ -746,7 +768,7 @@ main{
     height: 20%;
 }
 
-.modal_form input[type="button"], .btn_endereco, #myBtn, #btn_contato{
+.modal_form input[type="button"], .modal_form input[type="submit"], .btn_endereco, #myBtn, #btn_contato{
         display: flex;
         justify-content: center;
         align-items: center;
