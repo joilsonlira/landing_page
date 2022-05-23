@@ -74,6 +74,10 @@
         display: none;
     }
     .inscription_detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
     .inscription_detail button{
@@ -103,6 +107,10 @@
         display: none;
         width: 0;
         height: 0;
+    }
+    .endereco_link{
+        display: flex;
+        width: 60vw;
     }
     #schedule{
         width: 100%;
