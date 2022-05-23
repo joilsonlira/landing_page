@@ -394,7 +394,7 @@ main{
                         color: var(--color-blue);
                     }
     #main_slide_container{
-        display: none;/*flex*/
+        display: flex;/*flex*/
         justify-content: center;
         flex-direction: column;
         align-items: center;
