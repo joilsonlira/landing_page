@@ -1,14 +1,16 @@
-function email_contato(){
-    const nodemailer = require('nodemailer');
+// const nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 
-var input = document.querySelector("#name_contato");
-var nome = input.value;
+var input_nome = document.querySelectorAll("#name_contato");
+var nome = input_nome.value;
 
-var input = document.querySelector("#email_contato");
-var email = input.value;
+var input_email = document.querySelectorAll("#email_contato");
+var email = input_email.value;
 
-var input = document.querySelector("#mensagem_contato");
-var text = input.value;
+var input_text = document.querySelectorAll("#mensagem_contato");
+var text = input_text.value;
+
+console.logo(text)
 
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -23,7 +25,7 @@ const transporter = nodemailer.createTransport({
 
 const mailOptions = {
     from: 'lirajoilson@gmail.com',
-    to: 'lirajoilson@gmail.com',
+    to: 'mkt@anexoeventos.com.br',
     nome: nome,
     email: email,
     subject: 'E-mail enviado!',
@@ -37,5 +39,3 @@ transporter.sendMail(mailOptions, function(error, info){
     console.log('Email enviado: ' + info.response);
     }
 });
-}
-
